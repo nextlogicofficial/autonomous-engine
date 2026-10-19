@@ -24,6 +24,7 @@ scripts/                 The self-checking build tooling (all dependency-light, 
   selftest.py            Pre-deploy gate: published counts / pages / sitemap / structured data must agree with the data.
   build_site.py          Regenerate the sitemap from the files on disk, so it can never go stale.
   test_generators.py     Feed the content generators one of every change type (incl. an unknown one) and assert valid output.
+  check_product_schema.py  Pre-deploy gate: Product JSON-LD must satisfy Google's Merchant listings requirements (image, price, brand, shipping/return policy).
   mcp_server.js          A read-only MCP server (Cloudflare Pages Function) that serves a JSON dataset to tool-using agents.
 playbooks/               Self-written, exact-enough-to-replay procedures (deploy, the gates, the MCP server).
 ```
